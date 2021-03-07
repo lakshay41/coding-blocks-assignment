@@ -1,0 +1,23 @@
+body{
+	background-color: black;
+}
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+}
+.design {
+	background: none;
+	padding: 10px 20px;
+	color: magenta;
+	border: 2px solid magenta;
+/* 	box-shadow: 3px 3px 10px magenta; */
+	transition: all 600ms;
+}
+.design:hover {
+	color: blue;
+	border: 2px solid blue;
+	box-shadow: 2px 3px 10px blue;
+	transform: translateY(-3px);
+}
