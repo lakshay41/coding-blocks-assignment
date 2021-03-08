@@ -1,0 +1,168 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+.color {
+	background-color: #F09EEE;
+	height: 30px;
+	width: 100%;
+}
+nav ul li{
+	list-style-type: none;
+}
+nav a {
+	text-decoration: none;
+	color: black;
+}
+nav ul li a {
+	font-family: 'Playfair Display SC', serif;
+}
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: white;
+	width: 100%;
+}
+nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 450px;
+}
+nav a:hover {
+	color: #F986F5;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  nav{
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul {
+  	flex-direction: column;
+    align-items: center;
+  }
+
+}
+section {
+	position: relative;
+}
+.picback {
+	position: absolute;
+	background-color: #F986F5;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+}
+
+.picback:hover {
+	opacity: 0.3;
+	cursor: pointer;
+	
+}
+.picture img{
+	width: 100%;
+	height: 570px;
+
+}
+main .heading{
+	display: flex;
+	justify-content: center;
+}
+main .divider {
+	height: 3px;
+	width: 90px;
+	background-color: #F986F5;
+	margin: 30px auto;
+}
+
+.cards {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+} 
+.card1 {
+	height: 350px;
+	width: 300px;
+	/* border: 1px solid black; */
+	position: relative;
+	perspective: 800px;
+}
+.frontcard1 {
+	position: absolute;
+	z-index: 1;
+	backface-visibility: hidden;
+}
+.frontcard1 img {
+	height: 300px;
+	width: 300px;
+}
+.backcard1 {
+	position: absolute;
+	height: 300px;
+	width: 300px;
+	background-color: white;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+}
+.backcard1 button a{
+	text-decoration: none;
+	color:#F986F5;
+	font-size: 1.5rem;
+}
+.backcard1 button {
+	padding: 20px 40px;
+	margin: 100px 50px;
+	background-color: white;
+	border:2px solid #F986F5;
+	transition: 800ms;
+
+}
+.backcard1 button:hover {
+	box-shadow: 7px 7px 10px #F986F5;
+
+}
+
+.card1 {
+	transform-style: preserve-3d;
+	cursor: pointer;
+	transition: 2s;
+}
+.card1:hover {
+	transform: rotateY(180deg);
+	transform-style: preserve-3d;
+	cursor: pointer;
+	transition: 2s;
+}
+
+.footerimg img {
+	height: 100px;
+	width: 100px;
+}
+
+.footerlist ul li{
+	display: inline;
+}
+.footerlist ul li a{
+	text-decoration: none;
+	color: white;
+
+}
+.email a{
+	color: white;
+}
+
+.fot {
+	padding-top: 20px;
+	padding-bottom: 100px;
+	background-color: #F986F5;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
