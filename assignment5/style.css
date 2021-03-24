@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	background-image: url("https://raw.githubusercontent.com/adsinghnet/FullStackAssignments/main/Assignment%205/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+.searchbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 15px 15px;
+
+}
+
+#inp {
+	width: 100%;
+	max-width: 450px;
+	border: none;
+	outline: none;
+	border-radius: 16px 0px 16px 0px;
+	padding: 10px 15px;
+	color: black;
+	font-size: 1.3rem;
+	opacity: 0.6;
+	border-bottom: 3px solid #DF8E00;
+}
+#inp:focus {
+	transition: 800ms;
+	opacity: 1;
+}
+.cityday,.cutemp,.description{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	padding: 20px 0px 20px 0px;
+	font-size: 32px;
+}
+#temp {
+	font-size: 130px;
+	text-shadow: 7px 0px 0px black;
+}
+
+
